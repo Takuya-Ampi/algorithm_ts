@@ -13,14 +13,6 @@ reader.on('close', function () {
   const remainder = input % 2
   const answer = remainder == 0 ? input / 2 : (input + 1) / 2
   console.log(answer);
-  
-
-
-
-
-
-
-
 });
 
 // 実行方法
