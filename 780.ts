@@ -1,4 +1,4 @@
-export {}
+export { }
 const lines = [];
 const reader = require('readline').createInterface({
   input: process.stdin,
@@ -9,9 +9,18 @@ reader.on('line', (line) => {
   lines.push(line);
 });
 reader.on('close', () => {
-  const num1: number = 1
-  const num2: number = lines[0]
-  console.log(num1 * num2)
+  const input: string = lines[0]
+  const arr: number[] = input.split(' ').map(str => parseInt(str, 10))
+  const men = arr[0]
+  const women = arr[1]
+  const result = women >= men + 1 ? true : false
+  if (result) {
+    console.log('YES');
+    console.log(women - (men + 1));
+  } else {
+    console.log('NO');
+    console.log((men + 1) - women);
+  }
 });
 
 // 実行方法
