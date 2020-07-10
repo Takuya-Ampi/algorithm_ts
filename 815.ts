@@ -16,7 +16,7 @@ reader.on('close', function () {
 });
 
 // 実行方法
-// tsc ファイル名
+// tsc ファイル名 -w
 // node ファイル名
 
 // ./node_modules/.bin/ts-node ファイル名
