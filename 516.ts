@@ -10,7 +10,7 @@ reader.on('line', (line) => {
 });
 reader.on('close', () => {
   const arr: string[] = lines
-  const redArr = arr.filter((value: string): boolean => {
+  const redArr:string[] = arr.filter((value: string): boolean => {
     return value.length == 3
   })
   if (redArr.length >= 2) {
