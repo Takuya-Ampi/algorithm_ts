@@ -10,6 +10,7 @@ reader.on('line', (line) => {
 });
 reader.on('close', () => {
   const arr: string[] = lines
+  // 入力して作られた配列をfilterして赤色の配列を作ることで、赤色と青色の数判定をできるようにする
   const redArr:string[] = arr.filter((value: string): boolean => {
     return value.length == 3
   })

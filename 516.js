@@ -10,6 +10,7 @@ reader.on('line', function (line) {
 });
 reader.on('close', function () {
     var arr = lines;
+    // 入力して作られた配列をfilterして赤色の配列を作ることで、赤色と青色の数判定をできるようにする
     var redArr = arr.filter(function (value) {
         return value.length == 3;
     });
